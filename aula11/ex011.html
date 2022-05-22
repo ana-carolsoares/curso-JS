@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+<body>
+    <h1>Sistema de identificador de brasileiros</h1>
+    
+        <div>
+            Pais de origem: <input type="text" id="pais">
+            <input type="button" value="cadastrar" onclick="cadastrar()">
+        </div>
+    
+    <div id="res"></div>
+
+    <script>
+        function cadastrar(){
+            var p = document.querySelector('#pais')
+            var res = document.querySelector('#res')
+            res.innerText = `Seu país de origem é ${pais.value}`
+            
+        }
+            
+        
+        
+    </script>
+
+</body>
+</html>
